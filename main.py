@@ -13,7 +13,7 @@ def meow(bot, update):
     bot.send_photo(chat_id=chat_id, photo=url)
 
 def main():
-    updater = Updater('636331007:AAHmOAXcdhEmZ0kiTX6LvbFI3153WH8Drro')
+    updater = Updater('bot_token')
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('meow',meow))
     updater.start_polling()
